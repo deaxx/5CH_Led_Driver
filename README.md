@@ -1,2 +1,2 @@
 # 5CH_Led_Driver
-5CH Led Driver PT4115 E72-2G4M05S
+5CH Led Driver PT4115 E72-2G4M05S1F
