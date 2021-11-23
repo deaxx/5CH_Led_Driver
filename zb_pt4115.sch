@@ -6648,7 +6648,7 @@ by exp-lbrs.ulp</description>
 <part name="U2" library="LM2596T-ADJ_NOPB" deviceset="LM2596T-ADJ/NOPB" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="12V"/>
-<part name="IC6" library="MSS1038-473MLB" deviceset="MSS1038-473MLB" device="" value="220uH"/>
+<part name="IC6" library="MSS1038-473MLB" deviceset="MSS1038-473MLB" device="" value="68uH"/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="100UF-POLAR" device="-25V-20%(ELEC)" package3d_urn="urn:adsk.eagle:package:37420/1" value="100uF"/>
 <part name="D6" library="SS18" deviceset="SS18" device=""/>
