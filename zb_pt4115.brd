@@ -171,7 +171,7 @@
 <wire x1="76.2" y1="60.96" x2="0" y2="60.96" width="0.15" layer="20"/>
 <wire x1="0" y1="60.96" x2="0" y2="0" width="0.15" layer="20"/>
 <text x="49.53" y="9.652" size="0.8128" layer="25">JLCJLCJLCJLC</text>
-<text x="7.366" y="2.54" size="1.4224" layer="25" distance="59">t.me/deaxx</text>
+<text x="9.398" y="3.302" size="1.4224" layer="25" distance="59">t.me/deaxx</text>
 <text x="24.892" y="52.324" size="1.4224" layer="25" distance="59">+</text>
 <text x="30.734" y="52.324" size="1.4224" layer="25" distance="59">+</text>
 <text x="36.703" y="52.451" size="1.4224" layer="25" distance="59">+</text>
@@ -576,23 +576,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-2.15" y="2.1"/>
 </polygon>
 </package>
-<package name="0402" urn="urn:adsk.eagle:footprint:37389/1" library_version="1">
-<description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-0.2704" y1="0.2286" x2="0.2704" y2="0.2286" width="0.1524" layer="51"/>
-<wire x1="0.2704" y1="-0.2286" x2="-0.2704" y2="-0.2286" width="0.1524" layer="51"/>
-<wire x1="-1.2" y1="0.65" x2="1.2" y2="0.65" width="0.0508" layer="39"/>
-<wire x1="1.2" y1="0.65" x2="1.2" y2="-0.65" width="0.0508" layer="39"/>
-<wire x1="1.2" y1="-0.65" x2="-1.2" y2="-0.65" width="0.0508" layer="39"/>
-<wire x1="-1.2" y1="-0.65" x2="-1.2" y2="0.65" width="0.0508" layer="39"/>
-<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.3048" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
 </packages>
 <packages3d>
 <package3d name="0603" urn="urn:adsk.eagle:package:37414/1" type="box" library_version="1">
@@ -606,13 +589,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <description>Panasonic Aluminium Electrolytic Capacitor VS-Serie Package E</description>
 <packageinstances>
 <packageinstance name="PANASONIC_D"/>
-</packageinstances>
-</package3d>
-<package3d name="0402" urn="urn:adsk.eagle:package:37413/1" type="box" library_version="1">
-<description>Generic 1005 (0402) package
-0.2mm courtyard excess rounded to nearest 0.05mm.</description>
-<packageinstances>
-<packageinstance name="0402"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -784,22 +760,6 @@ Dimensional Drawing</description>
 </package3d>
 </packages3d>
 </library>
-<library name="BeagleBone_Black_Wireless" urn="urn:adsk.eagle:library:6644236">
-<description>Generated from &lt;b&gt;BeagleBone_Black_Wireless.sch&lt;/b&gt;&lt;p&gt;
-by exp-lbrs.ulp</description>
-<packages>
-<package name="BEAGLEBONEBLACK_MOUNTING_HOLE" urn="urn:adsk.eagle:footprint:6644297/1" library_version="14">
-<pad name="P$1" x="0" y="0" drill="3.175" diameter="4.445"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="BEAGLEBONEBLACK_MOUNTING_HOLE" urn="urn:adsk.eagle:package:6644362/2" type="model" library_version="14">
-<packageinstances>
-<packageinstance name="BEAGLEBONEBLACK_MOUNTING_HOLE"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
 <library name="SparkFun-SEWPAD16">
 <description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
 This library contains electrically-functional connectors. 
@@ -887,6 +847,35 @@ CONN_04x2
 </description>
 <packageinstances>
 <packageinstance name="2X4"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="holes" urn="urn:adsk.eagle:library:237">
+<description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="3,0" urn="urn:adsk.eagle:footprint:14240/1" library_version="2">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.0 mm with drill center</description>
+<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="1.6" width="0.2032" layer="21"/>
+<text x="-1.27" y="-3.81" size="1.27" layer="48">3,0</text>
+<hole x="0" y="0" drill="3"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="3,0" urn="urn:adsk.eagle:package:14277/1" type="box" library_version="2">
+<description>MOUNTING HOLE 3.0 mm with drill center</description>
+<packageinstances>
+<packageinstance name="3,0"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1342,9 +1331,9 @@ design rules under a new name.</description>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/SS18?qs=mVVXn4M53U%252B25aMJheuSLA%3D%3D" x="16.51" y="20.574" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="11.811" y="20.574" size="1.016" layer="25" rot="R180" align="center"/>
 </element>
-<element name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="PANASONIC_D" package3d_urn="urn:adsk.eagle:package:37420/1" value="100uF" x="5.334" y="11.049" smashed="yes" rot="R270">
-<attribute name="NAME" x="8.382" y="7.493" size="1.016" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-12547" x="5.334" y="11.049" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="PANASONIC_D" package3d_urn="urn:adsk.eagle:package:37420/1" value="100uF" x="4.699" y="12.446" smashed="yes" rot="R180">
+<attribute name="NAME" x="1.778" y="15.367" size="1.016" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="CAP-12547" x="4.699" y="12.446" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R12" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="R0805" package3d_urn="urn:adsk.eagle:package:6240566/1" value="" x="34.163" y="18.288" smashed="yes" rot="R270">
 <attribute name="NAME" x="34.544" y="20.32" size="1.016" layer="25" rot="R90"/>
@@ -1376,10 +1365,18 @@ design rules under a new name.</description>
 <attribute name="NAME" x="64.135" y="26.543" size="1.016" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-08272" x="64.008" y="27.305" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="MGT1" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="BEAGLEBONEBLACK_MOUNTING_HOLE" package3d_urn="urn:adsk.eagle:package:6644362/2" value="BEAGLEBONEBLACK_MOUNTING_HOLE" x="3.302" y="3.048" smashed="yes"/>
-<element name="MGT2" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="BEAGLEBONEBLACK_MOUNTING_HOLE" package3d_urn="urn:adsk.eagle:package:6644362/2" value="BEAGLEBONEBLACK_MOUNTING_HOLE" x="73.152" y="3.048" smashed="yes"/>
-<element name="MGT3" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="BEAGLEBONEBLACK_MOUNTING_HOLE" package3d_urn="urn:adsk.eagle:package:6644362/2" value="BEAGLEBONEBLACK_MOUNTING_HOLE" x="3.302" y="57.15" smashed="yes"/>
-<element name="MGT4" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" package="BEAGLEBONEBLACK_MOUNTING_HOLE" package3d_urn="urn:adsk.eagle:package:6644362/2" value="BEAGLEBONEBLACK_MOUNTING_HOLE" x="73.152" y="57.15" smashed="yes"/>
+<element name="MGT1" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0" package3d_urn="urn:adsk.eagle:package:14277/1" value="MOUNT-HOLE3.0" x="4.318" y="4.191" smashed="yes">
+<attribute name="POPULARITY" value="3" x="4.318" y="4.191" size="1.778" layer="27" display="off"/>
+</element>
+<element name="MGT2" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0" package3d_urn="urn:adsk.eagle:package:14277/1" value="MOUNT-HOLE3.0" x="72.009" y="3.937" smashed="yes">
+<attribute name="POPULARITY" value="3" x="72.009" y="3.937" size="1.778" layer="27" display="off"/>
+</element>
+<element name="MGT3" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0" package3d_urn="urn:adsk.eagle:package:14277/1" value="MOUNT-HOLE3.0" x="4.191" y="56.769" smashed="yes">
+<attribute name="POPULARITY" value="3" x="4.191" y="56.769" size="1.778" layer="27" display="off"/>
+</element>
+<element name="MGT4" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0" package3d_urn="urn:adsk.eagle:package:14277/1" value="MOUNT-HOLE3.0" x="72.009" y="56.769" smashed="yes">
+<attribute name="POPULARITY" value="3" x="72.009" y="56.769" size="1.778" layer="27" display="off"/>
+</element>
 <element name="BTN2" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_5.2MM" package3d_urn="urn:adsk.eagle:package:40167/1" value="MOMENTARY-SWITCH-SPST-SMD-5.2-REDUNDANT" x="41.021" y="3.048" smashed="yes" rot="R180">
 <attribute name="NAME" x="41.021" y="6.731" size="1.016" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="SWCH-08247" x="41.021" y="3.048" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1395,25 +1392,25 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="SWCH-08247" x="49.276" y="3.048" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SF_SKU" value="COM-08720" x="49.276" y="3.048" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C11" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0402" package3d_urn="urn:adsk.eagle:package:37413/1" value="100nF" x="3.429" y="39.624" smashed="yes" rot="MR270">
-<attribute name="NAME" x="2.667" y="39.624" size="1.016" layer="26" font="vector" ratio="20" rot="MR270" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-09041" x="3.429" y="39.624" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="C11" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="100nF" x="5.842" y="42.418" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.842" y="43.18" size="1.016" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-center"/>
+<attribute name="PROD_ID" value="CAP-07877" x="5.842" y="42.418" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="C12" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0402" package3d_urn="urn:adsk.eagle:package:37413/1" value="100nF" x="33.147" y="42.291" smashed="yes" rot="MR0">
+<element name="C12" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="100nF" x="33.147" y="42.291" smashed="yes" rot="MR0">
 <attribute name="NAME" x="33.147" y="43.053" size="1.016" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-09041" x="33.147" y="42.291" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PROD_ID" value="CAP-07877" x="33.147" y="42.291" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="C13" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0402" package3d_urn="urn:adsk.eagle:package:37413/1" value="100nF" x="19.558" y="42.291" smashed="yes" rot="MR0">
-<attribute name="NAME" x="19.558" y="43.053" size="1.016" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-09041" x="19.558" y="42.291" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="C13" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="100nF" x="19.812" y="42.291" smashed="yes" rot="MR0">
+<attribute name="NAME" x="19.812" y="43.053" size="1.016" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-center"/>
+<attribute name="PROD_ID" value="CAP-07877" x="19.812" y="42.291" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="C14" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0402" package3d_urn="urn:adsk.eagle:package:37413/1" value="100nF" x="48.133" y="42.291" smashed="yes" rot="MR0">
+<element name="C14" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="100nF" x="48.133" y="42.291" smashed="yes" rot="MR0">
 <attribute name="NAME" x="48.133" y="43.053" size="1.016" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-09041" x="48.133" y="42.291" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PROD_ID" value="CAP-07877" x="48.133" y="42.291" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="C15" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0402" package3d_urn="urn:adsk.eagle:package:37413/1" value="100nF" x="61.722" y="42.418" smashed="yes" rot="MR0">
+<element name="C15" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="100nF" x="61.722" y="42.418" smashed="yes" rot="MR0">
 <attribute name="NAME" x="61.722" y="43.18" size="1.016" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-09041" x="61.722" y="42.418" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PROD_ID" value="CAP-07877" x="61.722" y="42.418" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="J7" library="SparkFun-SEWPAD16" package="2X4" package3d_urn="urn:adsk.eagle:package:38103/1" value="" x="58.801" y="3.048" smashed="yes">
 <attribute name="VALUE" x="53.721" y="-0.635" size="0.6096" layer="27" font="vector" ratio="20"/>
@@ -1490,20 +1487,20 @@ design rules under a new name.</description>
 <vertex x="62.23" y="36.703"/>
 <vertex x="71.501" y="36.703"/>
 <vertex x="71.501" y="29.083"/>
-<vertex x="71.247" y="28.829"/>
-<vertex x="7.493" y="28.829"/>
+<vertex x="71.374" y="28.956"/>
+<vertex x="7.366" y="28.956"/>
 </polygon>
 <contactref element="U2" pad="1"/>
 <contactref element="C8" pad="+"/>
-<via x="5.334" y="8.636" extent="1-16" drill="0.85"/>
+<via x="2.286" y="12.446" extent="1-16" drill="0.85"/>
 <contactref element="F1" pad="1"/>
 <contactref element="F1" pad="2"/>
 <contactref element="J6" pad="P1"/>
 <polygon width="0.1524" layer="1" thermals="no">
 <vertex x="10.541" y="24.892"/>
-<vertex x="1.016" y="24.892"/>
-<vertex x="1.016" y="7.112"/>
-<vertex x="15.621" y="7.112"/>
+<vertex x="0.762" y="24.892"/>
+<vertex x="0.762" y="8.509"/>
+<vertex x="15.621" y="8.509"/>
 <vertex x="15.621" y="10.668"/>
 <vertex x="3.937" y="10.668"/>
 <vertex x="3.937" y="22.225"/>
@@ -1537,9 +1534,9 @@ design rules under a new name.</description>
 <via x="2.159" y="35.433" extent="1-16" drill="0.35"/>
 <polygon width="0.0762" layer="16" thermals="no">
 <vertex x="4.826" y="30.734"/>
-<vertex x="1.27" y="30.734"/>
-<vertex x="1.27" y="41.783"/>
-<vertex x="14.859" y="55.372"/>
+<vertex x="0.762" y="30.734"/>
+<vertex x="0.762" y="42.926"/>
+<vertex x="13.208" y="55.372"/>
 <vertex x="23.368" y="55.372"/>
 <vertex x="24.257" y="56.261"/>
 <vertex x="24.257" y="57.912"/>
@@ -1548,16 +1545,16 @@ design rules under a new name.</description>
 <vertex x="25.146" y="54.229"/>
 <vertex x="18.923" y="54.229"/>
 <vertex x="11.176" y="46.482"/>
-<vertex x="8.128" y="46.482"/>
-<vertex x="2.54" y="40.894"/>
+<vertex x="7.112" y="46.482"/>
+<vertex x="2.54" y="41.91"/>
 <vertex x="2.54" y="35.433"/>
 <vertex x="4.826" y="33.147"/>
 </polygon>
 <polygon width="0.0762" layer="16">
 <vertex x="4.826" y="30.734"/>
-<vertex x="1.27" y="30.734"/>
-<vertex x="1.27" y="41.783"/>
-<vertex x="14.859" y="55.372"/>
+<vertex x="0.762" y="30.734"/>
+<vertex x="0.762" y="42.926"/>
+<vertex x="13.208" y="55.372"/>
 <vertex x="23.368" y="55.372"/>
 <vertex x="24.257" y="56.261"/>
 <vertex x="24.257" y="57.912"/>
@@ -1566,11 +1563,12 @@ design rules under a new name.</description>
 <vertex x="25.146" y="54.229"/>
 <vertex x="18.923" y="54.229"/>
 <vertex x="11.176" y="46.482"/>
-<vertex x="8.128" y="46.482"/>
-<vertex x="2.54" y="40.894"/>
+<vertex x="7.112" y="46.482"/>
+<vertex x="2.54" y="41.91"/>
 <vertex x="2.54" y="35.433"/>
 <vertex x="4.826" y="33.147"/>
 </polygon>
+<via x="3.048" y="34.29" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="CH1">
 <contactref element="IC1" pad="1"/>
@@ -1670,7 +1668,7 @@ design rules under a new name.</description>
 <contactref element="U2" pad="5"/>
 <contactref element="R13" pad="1"/>
 <via x="36.322" y="8.763" extent="1-16" drill="0.85"/>
-<via x="5.334" y="13.208" extent="1-16" drill="0.85" diameter="0.55"/>
+<via x="7.112" y="12.446" extent="1-16" drill="0.85" diameter="0.55"/>
 <polygon width="0.1524" layer="1" thermals="no">
 <vertex x="4.572" y="11.684"/>
 <vertex x="15.621" y="11.684"/>
@@ -1743,31 +1741,31 @@ design rules under a new name.</description>
 <vertex x="18.288" y="36.957"/>
 <vertex x="23.876" y="31.369"/>
 <vertex x="23.876" y="28.067"/>
-<vertex x="28.448" y="28.067"/>
-<vertex x="28.448" y="41.275"/>
+<vertex x="27.559" y="28.067"/>
+<vertex x="27.559" y="41.275"/>
 </polygon>
 <polygon width="0.1524" layer="16" thermals="no">
 <vertex x="4.445" y="41.402"/>
 <vertex x="4.445" y="36.195"/>
 <vertex x="12.7" y="27.94"/>
-<vertex x="14.986" y="27.94"/>
-<vertex x="14.986" y="41.402"/>
+<vertex x="14.351" y="27.94"/>
+<vertex x="14.351" y="41.402"/>
 </polygon>
 <polygon width="0.1524" layer="16" thermals="no">
 <vertex x="32.385" y="41.275"/>
 <vertex x="32.385" y="37.084"/>
 <vertex x="37.084" y="32.385"/>
 <vertex x="37.084" y="28.067"/>
-<vertex x="42.418" y="28.067"/>
-<vertex x="42.418" y="41.275"/>
+<vertex x="41.783" y="28.067"/>
+<vertex x="41.783" y="41.275"/>
 </polygon>
 <polygon width="0.1524" layer="16" thermals="no">
 <vertex x="46.482" y="41.275"/>
 <vertex x="46.482" y="37.211"/>
 <vertex x="53.594" y="30.099"/>
 <vertex x="53.594" y="28.321"/>
-<vertex x="56.642" y="28.321"/>
-<vertex x="56.642" y="41.275"/>
+<vertex x="56.007" y="28.321"/>
+<vertex x="56.007" y="41.275"/>
 </polygon>
 <polygon width="0.1524" layer="16" thermals="no">
 <vertex x="60.706" y="41.275"/>
@@ -1803,16 +1801,17 @@ design rules under a new name.</description>
 <contactref element="C14" pad="1"/>
 <contactref element="C15" pad="1"/>
 <contactref element="C11" pad="1"/>
-<wire x1="20.138" y1="42.291" x2="20.138" y2="40.966" width="0.254" layer="16"/>
-<wire x1="20.138" y1="40.966" x2="18.923" y2="39.751" width="0.254" layer="16"/>
-<wire x1="33.727" y1="42.291" x2="33.727" y2="40.839" width="0.254" layer="16"/>
-<wire x1="33.727" y1="40.839" x2="32.766" y2="39.878" width="0.254" layer="16"/>
-<wire x1="48.713" y1="42.291" x2="48.713" y2="40.331" width="0.254" layer="16"/>
-<wire x1="48.713" y1="40.331" x2="48.26" y2="39.878" width="0.254" layer="16"/>
-<wire x1="48.26" y1="39.878" x2="46.99" y2="39.878" width="0.254" layer="16"/>
+<wire x1="20.662" y1="42.291" x2="20.662" y2="40.728" width="0.254" layer="16"/>
+<wire x1="20.662" y1="40.728" x2="19.685" y2="39.751" width="0.254" layer="16"/>
+<wire x1="19.685" y1="39.751" x2="18.923" y2="39.751" width="0.254" layer="16"/>
+<wire x1="33.997" y1="42.291" x2="33.997" y2="41.109" width="0.254" layer="16"/>
+<wire x1="33.997" y1="41.109" x2="32.766" y2="39.878" width="0.254" layer="16"/>
+<wire x1="48.983" y1="42.291" x2="48.983" y2="40.474" width="0.254" layer="16"/>
+<wire x1="48.983" y1="40.474" x2="48.387" y2="39.878" width="0.254" layer="16"/>
+<wire x1="48.387" y1="39.878" x2="46.99" y2="39.878" width="0.254" layer="16"/>
 <wire x1="46.99" y1="39.878" x2="46.863" y2="40.005" width="0.254" layer="16"/>
-<wire x1="62.302" y1="42.418" x2="62.302" y2="40.204" width="0.254" layer="16"/>
-<wire x1="62.302" y1="40.204" x2="62.103" y2="40.005" width="0.254" layer="16"/>
+<wire x1="62.572" y1="42.418" x2="62.572" y2="40.474" width="0.254" layer="16"/>
+<wire x1="62.572" y1="40.474" x2="62.103" y2="40.005" width="0.254" layer="16"/>
 <wire x1="62.103" y1="40.005" x2="61.087" y2="40.005" width="0.254" layer="16"/>
 <wire x1="68.187" y1="27.305" x2="68.187" y2="26.277" width="0.254" layer="1"/>
 <wire x1="67.691" y1="25.781" x2="65.786" y2="25.781" width="0.254" layer="1"/>
@@ -1860,8 +1859,9 @@ design rules under a new name.</description>
 <via x="45.847" y="25.146" extent="1-16" drill="0.3"/>
 <via x="45.847" y="21.209" extent="1-16" drill="0.3"/>
 <via x="45.847" y="16.891" extent="1-16" drill="0.3"/>
-<wire x1="3.429" y1="40.204" x2="4.5" y2="40.204" width="0.2" layer="16"/>
-<wire x1="4.5" y1="40.204" x2="4.953" y2="39.751" width="0.2" layer="16"/>
+<wire x1="6.692" y1="42.418" x2="6.692" y2="40.093" width="0.254" layer="16"/>
+<wire x1="6.692" y1="40.093" x2="6.35" y2="39.751" width="0.254" layer="16"/>
+<wire x1="6.35" y1="39.751" x2="4.953" y2="39.751" width="0.254" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="U$2" pad="1"/>
@@ -1891,8 +1891,8 @@ design rules under a new name.</description>
 </polygon>
 <polygon width="0.0762" layer="16" thermals="no">
 <vertex x="32.766" y="30.48"/>
-<vertex x="29.337" y="30.48"/>
-<vertex x="29.337" y="46.101"/>
+<vertex x="28.575" y="30.48"/>
+<vertex x="28.575" y="45.339"/>
 <vertex x="36.195" y="52.959"/>
 <vertex x="36.195" y="57.912"/>
 <vertex x="37.719" y="57.912"/>
@@ -1907,8 +1907,8 @@ design rules under a new name.</description>
 <via x="30.226" y="34.417" extent="1-16" drill="0.35"/>
 <via x="30.226" y="35.56" extent="1-16" drill="0.35"/>
 <polygon width="0.0762" layer="16">
-<vertex x="29.337" y="46.101"/>
-<vertex x="29.337" y="30.48"/>
+<vertex x="28.575" y="45.339"/>
+<vertex x="28.575" y="30.48"/>
 <vertex x="32.766" y="30.48"/>
 <vertex x="32.766" y="33.528"/>
 <vertex x="30.353" y="35.941"/>
@@ -1918,6 +1918,7 @@ design rules under a new name.</description>
 <vertex x="36.195" y="57.912"/>
 <vertex x="36.195" y="52.959"/>
 </polygon>
+<via x="31.115" y="34.417" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="CH2">
 <contactref element="IC2" pad="1"/>
@@ -1994,8 +1995,8 @@ design rules under a new name.</description>
 </polygon>
 <polygon width="0.0762" layer="16">
 <vertex x="18.923" y="30.48"/>
-<vertex x="15.494" y="30.48"/>
-<vertex x="15.494" y="46.482"/>
+<vertex x="14.986" y="30.48"/>
+<vertex x="14.986" y="45.974"/>
 <vertex x="22.352" y="53.34"/>
 <vertex x="30.099" y="53.34"/>
 <vertex x="30.099" y="57.912"/>
@@ -2007,6 +2008,7 @@ design rules under a new name.</description>
 <vertex x="16.637" y="35.814"/>
 <vertex x="18.923" y="33.528"/>
 </polygon>
+<via x="17.272" y="34.417" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="CH3">
 <contactref element="IC3" pad="1"/>
@@ -2057,8 +2059,8 @@ design rules under a new name.</description>
 <vertex x="43.688" y="57.912"/>
 <vertex x="43.688" y="56.388"/>
 <vertex x="46.482" y="53.594"/>
-<vertex x="46.482" y="42.799"/>
-<vertex x="44.577" y="40.894"/>
+<vertex x="46.482" y="43.815"/>
+<vertex x="44.577" y="41.91"/>
 <vertex x="44.577" y="35.687"/>
 <vertex x="46.863" y="33.401"/>
 </polygon>
@@ -2070,17 +2072,18 @@ design rules under a new name.</description>
 <polygon width="0.0762" layer="16">
 <vertex x="42.164" y="57.912"/>
 <vertex x="42.164" y="55.372"/>
-<vertex x="43.434" y="54.102"/>
-<vertex x="43.434" y="30.48"/>
+<vertex x="42.799" y="54.737"/>
+<vertex x="42.799" y="30.48"/>
 <vertex x="46.863" y="30.48"/>
 <vertex x="46.863" y="33.401"/>
 <vertex x="44.577" y="35.687"/>
-<vertex x="44.577" y="40.894"/>
-<vertex x="46.482" y="42.799"/>
+<vertex x="44.577" y="41.91"/>
+<vertex x="46.482" y="43.815"/>
 <vertex x="46.482" y="53.594"/>
 <vertex x="43.688" y="56.388"/>
 <vertex x="43.688" y="57.912"/>
 </polygon>
+<via x="45.212" y="34.417" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="CH4">
 <contactref element="IC4" pad="1"/>
@@ -2124,8 +2127,8 @@ design rules under a new name.</description>
 </polygon>
 <polygon width="0.0762" layer="16" thermals="no">
 <vertex x="61.087" y="30.48"/>
-<vertex x="57.404" y="30.48"/>
-<vertex x="57.404" y="45.085"/>
+<vertex x="56.896" y="30.48"/>
+<vertex x="56.896" y="45.593"/>
 <vertex x="48.133" y="54.356"/>
 <vertex x="48.133" y="57.912"/>
 <vertex x="49.657" y="57.912"/>
@@ -2142,7 +2145,7 @@ design rules under a new name.</description>
 <via x="58.547" y="34.417" extent="1-16" drill="0.35"/>
 <via x="58.547" y="35.56" extent="1-16" drill="0.35"/>
 <polygon width="0.0762" layer="16">
-<vertex x="57.404" y="45.085"/>
+<vertex x="56.896" y="45.593"/>
 <vertex x="48.133" y="54.356"/>
 <vertex x="48.133" y="57.912"/>
 <vertex x="49.657" y="57.912"/>
@@ -2153,8 +2156,9 @@ design rules under a new name.</description>
 <vertex x="58.547" y="35.941"/>
 <vertex x="61.087" y="33.401"/>
 <vertex x="61.087" y="30.48"/>
-<vertex x="57.404" y="30.48"/>
+<vertex x="56.896" y="30.48"/>
 </polygon>
+<via x="59.436" y="34.417" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="CH5">
 <contactref element="IC5" pad="1"/>
@@ -2406,16 +2410,16 @@ design rules under a new name.</description>
 <contactref element="R6" pad="1"/>
 <wire x1="17.923" y1="27.432" x2="16.764" y2="27.432" width="0.254" layer="1"/>
 <via x="16.764" y="27.432" extent="1-16" drill="0.3"/>
-<wire x1="3.453" y1="39.442" x2="3.453" y2="38.124" width="0.254" layer="1"/>
 <wire x1="3.453" y1="38.124" x2="3.175" y2="37.846" width="0.254" layer="1"/>
 <via x="3.175" y="37.846" extent="1-16" drill="0.3"/>
 <wire x1="11.938" y1="27.432" x2="3.175" y2="36.195" width="0.254" layer="16"/>
 <wire x1="3.175" y1="37.846" x2="3.175" y2="36.195" width="0.254" layer="16"/>
 <wire x1="11.938" y1="27.432" x2="16.764" y2="27.432" width="0.254" layer="16"/>
 <contactref element="C11" pad="2"/>
-<wire x1="3.175" y1="37.846" x2="3.175" y2="38.1" width="0.254" layer="16"/>
-<wire x1="3.175" y1="38.1" x2="3.429" y2="38.354" width="0.254" layer="16"/>
-<wire x1="3.429" y1="38.354" x2="3.429" y2="39.044" width="0.254" layer="16"/>
+<wire x1="3.175" y1="37.846" x2="3.175" y2="41.275" width="0.254" layer="16"/>
+<wire x1="4.318" y1="42.418" x2="4.992" y2="42.418" width="0.254" layer="16"/>
+<wire x1="3.175" y1="41.275" x2="4.318" y2="42.418" width="0.254" layer="16"/>
+<wire x1="3.453" y1="39.442" x2="3.453" y2="38.124" width="0.254" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="U$2" pad="3"/>
@@ -2431,7 +2435,7 @@ design rules under a new name.</description>
 <contactref element="C12" pad="2"/>
 <wire x1="31.242" y1="40.894" x2="31.242" y2="41.91" width="0.254" layer="16"/>
 <wire x1="31.242" y1="41.91" x2="31.623" y2="42.291" width="0.254" layer="16"/>
-<wire x1="31.623" y1="42.291" x2="32.567" y2="42.291" width="0.254" layer="16"/>
+<wire x1="31.623" y1="42.291" x2="32.297" y2="42.291" width="0.254" layer="16"/>
 </signal>
 <signal name="N$8">
 <contactref element="U$3" pad="3"/>
@@ -2447,7 +2451,7 @@ design rules under a new name.</description>
 <contactref element="C13" pad="2"/>
 <wire x1="17.399" y1="40.767" x2="17.399" y2="41.529" width="0.254" layer="16"/>
 <wire x1="17.399" y1="41.529" x2="18.161" y2="42.291" width="0.254" layer="16"/>
-<wire x1="18.161" y1="42.291" x2="18.978" y2="42.291" width="0.254" layer="16"/>
+<wire x1="18.161" y1="42.291" x2="18.962" y2="42.291" width="0.254" layer="16"/>
 </signal>
 <signal name="N$11">
 <contactref element="U$4" pad="3"/>
@@ -2463,7 +2467,7 @@ design rules under a new name.</description>
 <wire x1="45.593" y1="36.195" x2="52.197" y2="29.591" width="0.254" layer="16"/>
 <contactref element="C14" pad="2"/>
 <wire x1="45.593" y1="41.021" x2="46.863" y2="42.291" width="0.254" layer="16"/>
-<wire x1="46.863" y1="42.291" x2="47.553" y2="42.291" width="0.254" layer="16"/>
+<wire x1="46.863" y1="42.291" x2="47.283" y2="42.291" width="0.254" layer="16"/>
 </signal>
 <signal name="N$12">
 <contactref element="U$5" pad="3"/>
@@ -2480,7 +2484,7 @@ design rules under a new name.</description>
 <contactref element="C15" pad="2"/>
 <wire x1="59.563" y1="41.021" x2="59.563" y2="41.91" width="0.254" layer="16"/>
 <wire x1="59.563" y1="41.91" x2="60.071" y2="42.418" width="0.254" layer="16"/>
-<wire x1="60.071" y1="42.418" x2="61.142" y2="42.418" width="0.254" layer="16"/>
+<wire x1="60.071" y1="42.418" x2="60.872" y2="42.418" width="0.254" layer="16"/>
 </signal>
 <signal name="N$16">
 <contactref element="U2" pad="2"/>
@@ -2605,6 +2609,8 @@ design rules under a new name.</description>
 <approved hash="19,1,b6ea0fe7fbb98905"/>
 <approved hash="19,1,f15676209e2fe953"/>
 <approved hash="19,1,532d5df477f87921"/>
+<approved hash="19,1,2b09293987358505"/>
+<approved hash="19,1,030f0103250f2703"/>
 </errors>
 </board>
 </drawing>
